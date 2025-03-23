@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "fake-personal"
+version = "0.1.0"
+description = ""
+authors = ["Renat Yakublevich <merlinincorp@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+grpcio = "^1.70.0"
+grpcio-tools = "^1.70.0"
+google = "^3.0.0"
+types-protobuf = "^5.29.1.20250208"
+faker = "^37.0.0"
+ruff = "^0.9.10"
+loguru = "^0.7.3"
+fastapi = {extras = ["standard"], version = "^0.115.11"}
+pydantic = "^2.10.6"
+python-dotenv = "^1.0.1"
+pydantic-settings = "^2.8.1"
+uvicorn = "^0.34.0"
+sse-starlette = "^2.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

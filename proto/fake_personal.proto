@@ -1,0 +1,15 @@
+syntax = "proto3";
+package fake_personal;
+
+import "google/protobuf/empty.proto";
+
+message FakePersonal {
+  string name = 1;
+  string address = 2;
+  string city = 3;
+}
+
+service FakePersonalService {
+  rpc Generate(google.protobuf.Empty) returns (FakePersonal);
+  rpc StreamGenerate(google.protobuf.Empty) returns (stream FakePersonal);
+}
